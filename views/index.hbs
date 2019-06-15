@@ -1,0 +1,58 @@
+<h1>Submit Data</h1>
+<form action="/insert" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
+  <div>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+  </div>
+  <div>
+    <label for="phoneNo">Phone-Number:</label>
+    <input type="text" id="phoneNo" name="phoneNo">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+<br>
+
+{{!--********************Challenge******************** --}}
+<h1>Submit Order</h1>
+<form action="/order" method="post">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="nameUser">
+  </div>
+  <div>
+    <label for="orderNo">Order Number</label>
+    <input type="text" id="orderNo" name="orderNo">
+  </div>
+  <div>
+    <label for="itemDesc">Item Description:</label>
+    <input type="text" id="itemDesc" name="itemDesc">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+<br>
+{{!--********************Challenge******************** --}}
+
+<h1>Retrieve Data</h1>
+
+<form action="/" method="post">
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" id="name" name="email">
+  </div>
+  <input type="submit" value="Submit">
+</form>
+
+<div id="data">
+  <p class="info">{{name}}</p>
+  <p class="info">{{email}}</p>
+  <p class="info">{{phoneNo}}</p>
+  <p class="info">{{password}}</p>
+</div>
